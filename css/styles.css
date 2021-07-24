@@ -932,7 +932,9 @@ section.no-bottom-padding {
 }
 
 .subscribe-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin: 0;
   width: 200px;
   height: 50px;
@@ -952,6 +954,13 @@ section.no-bottom-padding {
   cursor: pointer;
 
   color: var(--primary-white-color);
+}
+
+.subscribe-icon{
+  display: block;
+  color: white;
+  margin: 0;
+  margin-left: 10px;
 }
 
 /* Backdrop */
