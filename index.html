@@ -39,14 +39,14 @@
           <li class="item icon-envelope">
             <a href="mailto:info@devstudio.com" class="link">
               <svg class="icon-envelope" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-envelope"></use></svg>
+                info@devstudio.com</a>
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link">
               <svg class="icon-tel" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
+                <use href="./images/icons.svg#icon-smartphone"></use></svg>
+                +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -70,30 +70,51 @@
                 <use href="./images/vector.svg#icon-Vector"></use>
               </svg>
             </button>
-          <form class="form js-speaker-form">
-            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-            <div class="form-field">
-            <label class="form-lable" for="name">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" />
-            </div>
-            <div class="form-field">
-            <label class="form-lable" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel">
-          </div>
-            <div class="form-field">
-            <label class="form-lable" for="mail">Почта</label>
-            <input class="form-input" type="email" name="mail" id="mail" />
-          </div>
-        <div class="form-field comments">
-            <label class="form-lable" for="comment">Комментарий</label>
-            <textarea class="form-textarea" name="comment" id="comment"  placeholder="Введите текст"></textarea>
-          </div>
-          <div class="agreement">
-            <input class="agreement-input" type="checkbox" name="agreement" id="agreement">
-            <label for="agreement-label">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-          </div>
-            <button class="form-button" type="submit">Отправить</button>
-          </form>
+            <form class="form js-speaker-form">
+              <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+              <label class="form-field">
+                <span class="form-lable">Имя</span>
+                <input class="form-input" type="text" name="name" />
+                <svg class="form-icon" width="12px" height="12px">
+                  <use href="./images/icon-forms.svg#icon-name"></use>
+                </svg>
+              </label>
+              <label class="form-field">
+                <span class="form-lable">Телефон</span>
+                <input class="form-input" type="tel" name="tel" />
+                <svg class="form-icon" width="13px" height="13px">
+                  <use href="./images/icon-forms.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <label class="form-field">
+                <span class="form-lable">Почта</span>
+                <input class="form-input" type="email" name="mail" />
+                <svg class="form-icon" width="15px" height="12px">
+                  <use href="./images/icon-forms.svg#icon-mail"></use>
+                </svg>
+              </label>
+              <label class="form-field comments">
+                <span class="form-lable">Комментарий</span>
+                <textarea
+                  class="form-textarea"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <label class="agreement">
+                <input
+                  class="agreement-input"
+                  type="checkbox"
+                  name="agree"
+                />
+                <svg class="form-icon-agreement" width="15px" height="15px">
+                  <use href="./images/icon-forms.svg#icon-agree"></use>
+                </svg>
+                <span class="agreement-label"
+                  >Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></span>
+              </label>
+              <button class="form-button" type="submit">Отправить</button>
+            </form>
           </div>
 
           <!-- <div role="group" class="group">
@@ -120,9 +141,6 @@
 
         <label for="pdf">Загрузить файл</label>
         <input type="file" name="pdf" id="pdf"> -->
-    
-
-          
         </div>
       </section>
       <!--Секция наши преимущества-->
@@ -479,13 +497,19 @@
               </li>
             </ul>
           </div>
+          <form class="subscribe-form">
             <div class="subscribe-block">
-            <b class="subscribe-label">Подпишитесь на рассылку</b>
-            <form class="subscribe-form">
-              <input class="subscribe-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+              <b class="subscribe-caption">Подпишитесь на рассылку</b>
+              <input
+                class="subscribe-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+            </div>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
-        </div>
         </div>
       </div>
     </footer>
